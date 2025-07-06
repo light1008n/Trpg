@@ -1,0 +1,88 @@
+﻿<Window x:Class="Application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920"
+        FontSize="20"
+        WindowState="Maximized">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- 基本情報 -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Margin="0,0,0,10">
+            <!-- 画像 -->
+            <Border Width="256" Height="256" Padding="5">
+                <Image Source="C:\Users\light\Desktop\Stable Diffusion\完成品\ファンタジー\00046-84022973.png" />
+            </Border>
+            <!-- 基本情報 -->
+            <StackPanel Orientation="Vertical" Margin="30,5,0,0">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="名前" FontSize="15"/>
+                    <TextBox Width="300"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="年齢" FontSize="15"/>
+                        <TextBox Width="140"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20,0,0,0">
+                        <TextBlock Text="性別" FontSize="15"/>
+                        <TextBox Width="140"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="種族" FontSize="15"/>
+                        <TextBox Width="190"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20,0,0,0">
+                        <TextBlock Text="サイズ" FontSize="15"/>
+                        <TextBox Width="90"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="メインクラス" FontSize="15"/>
+                    <TextBox Width="300"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="レベル" FontSize="15"/>
+                        <TextBox Width="140"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="20,0,0,0">
+                        <TextBlock Text="経験値" FontSize="15"/>
+                        <TextBox Width="140"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <!-- クラス -->
+            <StackPanel Orientation="Vertical" Margin="30,5,0,0">
+                <TextBlock Text="クラス" FontSize="15" />
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <ComboBox Width="200" Height="27" FontSize="15">
+                            <ComboBoxItem Content="ファイター"/>
+                            <ComboBoxItem Content="ウィザード"/>
+                            <ComboBoxItem Content="クレリック"/>
+                            <ComboBoxItem Content="ローグ"/>
+                        </ComboBox>
+                        <TextBox Width="80" Margin="20,0,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
