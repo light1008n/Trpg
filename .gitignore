@@ -1,1 +1,77 @@
+# Build results
 bin/
+obj/
+[Bb]uild/
+[Ll]ogs/
+*.log
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code workspace files
+.vscode/
+
+# Rider project files
+.idea/
+
+# Auto-generated files
+*.Generated.cs
+*.g.cs
+*.g.i.cs
+
+# Backup & temp files
+*~
+*.tmp
+*.bak
+
+# Visual Studio cache files
+.vs/
+
+# NuGet packages
+*.nupkg
+# The packages folder can be restored via NuGet
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+# DotCover is a JetBrains code coverage tool
+*.dotCover
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Test Results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# Publish output
+**/publish/
+*.publish.xml
+
+# Temporary Key
+*.pfx
+*.snk
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Others
+*.orig
+
+# Local history for Visual Studio
+.localhistory/
+
+# Godot (in case you're mixing things)
+.import/
+.export/
